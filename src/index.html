@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Placeholder title</title>
+    <link rel="stylesheet" href="main.css">
+ 
+</head>
+
+<body>
+
+<h3>Сделать форк <a href="https://github.com/axZerk/gulp-starter-kit">репозитория</a> с Gulp сборкой.</h3>
+
+
+<h3>Создать таск 'js' для обработки JavaScript файлов. Добавить обработку файлов пакетом gulp-babel.</h3>
+
+<h3>Для таска 'js' добавить конкатенацию и минификацию JavaScript файлов c пакетами gulp-concat и gulp-uglify.</h3>
+
+<h3>Пакеты для ДЗ искать на npmjs.com и следовать документации.</h3>
+<br>
+<h3>Для работы сборки, необходимо установить LTS версию NodeJS</h3>
+<br>
+<h3>Использование</h3>
+<ul>
+	<li>Скачать репо как архив</li>
+	<li>Переименовать папку под свой проект</li>
+	<li>В консоли перейти в корень проекта.
+Выполнить команду npm i</li>
+	<li>Ждать пока установятся все зависимости</li>
+	<li>После окончания установки запустить командой npm start</li>
+</ul>
+<br>
+<h3>Папки</h3>
+<ul>
+	<li>Изображения складывать в папку src/images</li>
+	<li>Шрифты складывать в папку src/fonts</li>
+</ul>
+<br>
+
+<h4>Использовано задание из ДЗ-11</h4>
+<hr>
+	<table class="userTable">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+      </thead>
+      <tbody id="tBody"></tbody>
+    </table>
+  
+<!-- Шаблон одной строки для tbody -->
+    <script type="text/template" id="table-row">
+      <tr scope="row">
+          <td><%- id%></td>
+          <td><%- name%></td>
+          <td><%- score%></td>
+      </tr>
+    </script>
+<!--     конец скрипта LoDash -->
+      <button id="out1GetUsers">Get all users</button>
+    <br>
+
+    <button id="out2AddUser">Add user</button>
+    <form id="user">
+      <input type="text" id="userName" placeholder="Input new name"><input type="" id="userScore" placeholder="Input new score">
+    </form>
+    <button id="out3RemoveUser">Remove user</button>
+    <form id="remove">
+      <input type="text" id="removeId" placeholder="Delete current ID">
+    </form>
+  <button id="out4UpdateUser">Update user</button>
+    <form id="change">
+      <input type="text" id="changeUserId" placeholder="Update current ID"><input type="text" id="changeUserName" placeholder="Update current name"><input type="text" id="changeUserScore" placeholder="Update current score">
+    </form>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+<script src="js/all.js"></script>
+</body>
+
+</html>
